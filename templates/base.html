@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Red Store. A store made for you make your own athletic choices." />
+    <meta name="keywords" content="Red Store, Athletic, Choices, E-commerce"
+    <meta name="author" content="Leonardo Machado">
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    {% block core_css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% endblock %}
+
+    {% block favicon %}
+    {% endblock %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block core_js %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% endblock core_js %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <title>RedStore | Your Athletic Choices {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body>
+
+    {% include 'includes/_nav-bar-html' %}
+    {% block content %}{% endblock  %}
+    {% include 'includes/_footer-html' %}
+
+</body>
+
+</html>
