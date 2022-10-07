@@ -352,6 +352,10 @@ form a {
     color: #fff;
 }
 
+.title:first-child {
+    margin-top: 80px;
+}
+
 .title {
     text-align: center;
     margin: 0 auto 80px;
