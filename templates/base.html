@@ -30,7 +30,6 @@
     {% block core_js %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="{% static 'js/script.js' %}"></script>
     {% endblock core_js %}
 
     {% block extra_js %}
@@ -44,6 +43,10 @@
     {% include 'includes/_header.html' %}
     {% block content %}{% endblock  %}
     {% include 'includes/_footer.html' %}
+
+    {% block postloadjs %}
+    <script src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
 
 </body>
 
