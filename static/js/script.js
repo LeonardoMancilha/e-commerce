@@ -25,10 +25,6 @@ small_image[3].onclick = function () {
     product_image.src = small_image[3].src;
 }
 
-const year = document.getElementsByClassName('year');
-const actualYear = new Date();
-year[0].innerHTML = actualYear.getFullYear();
-
 function register() {
     let login_form = document.getElementsByClassName('login-form')[0];
     let register_form = document.getElementsByClassName('register-form')[0];

@@ -35,6 +35,14 @@
             </div>
         </div>
         <hr>
-        <p class="copyright"><span class="year">Copyright</span> - Leonardo Machado</p>
+        <p class="copyright">Copyright &copy;<span class="year"></span> - Leonardo Machado</p>
     </div>
 </footer>
+
+{% block postloadjs %}
+<script>
+    const year = document.getElementsByClassName('year');
+    const actualYear = new Date();
+    year[0].innerHTML = actualYear.getFullYear();
+</script>
+{% endblock %}
