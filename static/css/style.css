@@ -107,7 +107,11 @@ select:focus {
 }
 
 .categories {
-    margin: 70px 0;
+    margin: 80px 0;
+}
+
+.categories > .small-container {
+    max-width: 1400px;
 }
 
 .small-container {
@@ -312,7 +316,6 @@ form a {
 
 .col-3 {
     min-width: 250px;
-    margin-bottom: 30px;
     flex-basis: 30%;
 }
 
