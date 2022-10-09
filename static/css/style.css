@@ -124,6 +124,7 @@ select:focus {
 .overlay-container:hover {
     filter: grayscale(100%);
     transform: scale(1.02);
+    cursor: pointer;
 }
 
 .overlay {
@@ -138,12 +139,6 @@ select:focus {
     font-size: 2.5rem;
     padding: 20px;
     text-align: center;
-}
-
-.overlay__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .overlay-container:hover .overlay {
