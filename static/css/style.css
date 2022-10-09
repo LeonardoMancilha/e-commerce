@@ -117,6 +117,13 @@ select:focus {
 .overlay-container {
     position: relative;
     width: 50%;
+    transition: transform .5s, filter .3s ease-in-out;
+    filter: grayscale(0);
+}
+
+.overlay-container:hover {
+    filter: grayscale(100%);
+    transform: scale(1.02);
 }
 
 .overlay {
@@ -125,7 +132,6 @@ select:focus {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: calc(100% - 8px);
     transition: .3s ease;
     opacity:0;
     color: white;
@@ -135,7 +141,6 @@ select:focus {
 }
 
 .overlay__text {
-    height: calc(100% - 8px);
     display: flex;
     justify-content: center;
     align-items: center;
