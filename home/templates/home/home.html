@@ -3,6 +3,13 @@
 
 {% block content %}
 
+<header>
+    <div class="container">
+        {% include 'includes/_navbar.html' %}
+        {% include 'includes/_hero-image.html' %}
+    </div>
+</header>
+
 {% include 'includes/_categories.html' %}
 {% include 'includes/_products.html' %}
 {% include 'includes/_feature.html' %}
