@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_title %}All Products{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  {% include 'includes/_navbar.html' %}
+</div>
+
+<section class="small-container">
+    <section class="row row-2">
+      <h2>All Products</h2>
+      <select>
+        <option>Default Shorting</option>
+        <option>Short by price</option>
+        <option>Short by popularity</option>
+        <option>Short by rating</option>
+        <option>Short by sale</option>
+      </select>
+    </section>
+    <section class="row">
+      <section class="col-4">
+        <img src="{% static 'images/product-1.jpg' %}" alt="image product 1" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-2.jpg' %}" alt="image product 2" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-3.jpg' %}" alt="image product 3" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-4.jpg' %}" alt="image product 4" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+    </section>
+    <section class="row">
+      <section class="col-4">
+        <img src="{% static 'images/product-5.jpg' %}" alt="image product 1" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-6.jpg' %}" alt="image product 2" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-7.jpg' %}" alt="image product 3" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-8.jpg' %}" alt="image product 4" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+    </section>
+    <section class="row">
+      <section class="col-4">
+        <img src="{% static 'images/product-9.jpg' %}" alt="image product 1" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-10.jpg' %}" alt="image product 2" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-11.jpg' %}" alt="image product 3" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+      <section class="col-4">
+        <img src="{% static 'images/product-12.jpg' %}" alt="image product 4" />
+        <h4>Red Printed T-shirt</h4>
+        <section class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </section>
+        <p>$50.00</p>
+      </section>
+    </section>
+    <section class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>&#8594;</span>
+    </section>
+  </section>
+</section>
+
+{% endblock %}

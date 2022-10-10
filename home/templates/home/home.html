@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<header>
+    <div class="container">
+        {% include 'includes/_navbar.html' %}
+        {% include 'includes/_hero-image.html' %}
+    </div>
+</header>
+
+{% include 'includes/_categories.html' %}
+{% include 'includes/_products.html' %}
+{% include 'includes/_feature.html' %}
+{% include 'includes/_testimonial.html' %}
+{% include 'includes/_brands.html' %}
+
+{% endblock %}
