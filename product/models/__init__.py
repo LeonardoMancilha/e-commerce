@@ -1,3 +1,4 @@
 from django.db import models
 
-from .Product_Models import Product
+from .product import Product
+from .product_category import Category
